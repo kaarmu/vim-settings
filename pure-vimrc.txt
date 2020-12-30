@@ -1,0 +1,112 @@
+
+
+" Sources
+"https://dougblack.io/words/a-good-vimrc.html
+"https://gist.github.com/subfuzion/7d00a6c919eeffaf6d3dbf9a4eb11d64
+"https://gist.github.com/gabrielso/3724745
+
+
+
+" Read file when modified outside Vim
+set autoread
+
+" Display in UTF-8
+set encoding=utf-8
+
+" Do not keep any history
+set viminfo='0,:0,<0,@0,f0
+set nobackup
+set nowb
+set noswapfile
+
+" Allow backspacing over everything in INSERT mode
+set backspace=indent,eol,start
+
+" Show ruler and command visual aid
+set ruler
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" Disable bells
+set noerrorbells
+set visualbell
+set t_vb=
+
+" Show matching bracets
+set showmatch
+
+" Highlight the cursor line
+set cursorline
+
+" Use Monaco as default font
+set guifont=Monaco:h12
+
+" Set the colorscheme and window transparency
+set background=dark
+colorscheme gruvbox8
+
+" Change Netrw tree mode
+let g:netrw_banner=0
+let g:netrw_liststyle=3
+
+" Set default vertical split to right
+set splitright
+
+" Set soft tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Show relative line number and no listchars
+set nolist
+set nonumber
+" set rnu
+
+" Scroll a bit horizontally when at the end of the line
+set sidescroll=6
+
+" Autocomplete menu
+set wildmenu
+
+" Don't redraw all the time
+set lazyredraw 
+
+" highlight search and increment search
+set hlsearch
+set incsearch 
+
+"" MOVEMENT
+
+nnoremap B ^
+nnoremap E $
+nnoremap ^ <nop>
+nnoremap $ <nop>
+
+
+"" LEADAER COMMANDS
+
+let mapleader=";"
+inoremap <leader>; <ESC>
+
+" Shortcut to edit THIS configuration file: (e)dit (c)onfiguration
+nnoremap <silent> <leader>ec :e $MYVIMRC<CR>
+
+" Shortcut to source (reload) THIS configuration file after editing it: (s)ource (c)onfiguraiton
+nnoremap <silent> <leader>sc :source $MYVIMRC<CR>
+
+" Toggle netrw
+nnoremap <silent> <leader>ex :Explore
+
+" Toggle line numbers
+nnoremap <silent> <leader>n :set rnu! rnu?<CR>
+
+" Stop the search
+nnoremap <leader><space> :nohlsearch<CR>
+
+" Save session
+nnoremap <leader>ss :mks!<CR>
+
+
+
+
+
