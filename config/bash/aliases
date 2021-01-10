@@ -1,0 +1,25 @@
+# -------------------------------- Just Aliases -------------------------------
+
+
+# nvim  - normal neovim
+# nv    - the installed neovim nightly
+alias nv="nvim-nightly"
+
+# -------------------------------- General ------------------------------------
+
+# Startup
+alias rc='$EDITOR ~/.bashrc'
+alias rcs='$EDITOR ~/.bashrc && source ~/.bashrc'
+alias rca='$EDITOR ~/.bash_aliases'
+alias rcas='$EDITOR ~/.bash_aliases && source ~/.bash_aliases'
+
+# History
+alias h='history'
+alias sh='history|grep '
+
+# Install
+alias sai='sudo apt install '
+alias saupd='sudo apt update'
+alias saupg='sudo apt upgrade'
+
+

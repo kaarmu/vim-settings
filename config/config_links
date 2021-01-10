@@ -1,0 +1,26 @@
+
+# === git ===
+# .gitconfig in ~/.config/git/config
+
+# === gnupg ===
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+# gpg2 --homedir "$XDG_DATA_HOME"/gnupg
+
+# === go ===
+export GOPATH="$XDG_DATA_HOME"/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+# === python/jupyter ===
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonrc.py
+export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+
+# === bash ===
+export HISTFILE="$XDG_DATA_HOME"/bash/history
+
+# === vim & neovim ===
+export VIM="$XDG_CONFIG_HOME"/vim
+export VIMPLUGGED="$XDG_DATA_HOME"/vim/plugged
+export VIMRUNTIME=/usr/share/vim/vim82
+export VIMINIT='let $MYVIMRC="$VIM/vimrc" | source $MYVIMRC'
+

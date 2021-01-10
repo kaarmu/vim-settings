@@ -1,0 +1,94 @@
+# === TODO ===
+# - check out "neofetch", like Brodie Robertson
+# - Make "Load profile" better
+
+# === ... ===
+
+# Start at home
+cd $HOME
+
+# Load profile
+source $HOME/.profile
+
+# === Raw zsh stuff ===
+
+# Enable colors and change prompt
+autoload -U colors && colors
+
+# History settings
+HISTFILE=$XDG_DATA_HOME/zsh/history
+HISTSIZE=1000
+SAVEHIST=1000
+
+# Warnings
+setopt autocd beep
+
+# Set cursor to beam style
+echo -ne '\e[5 q'
+precmd () { echo -ne '\e[5 q'; }
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/kajarfvidsson/.zshrc'
+
+autoload -Uz compinit
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+# End of lines added by compinstall
+
+# === Aliases and minor tweaks ===
+
+# Alias definitions
+if [ -f $XDG_CONFIG_HOME/zsh/aliases ]; then
+    . $XDG_CONFIG_HOME/zsh/aliases
+fi
+
+# Function definitions
+if [ -f $XDG_CONFIG_HOME/zsh/funcs ]; then
+    . $XDG_CONFIG_HOME/zsh/funcs
+fi
+
+# === zsh plugins and themes ===
+
+# Load all plugins defined below.
+# Plugins must be in $XDG_DATA_HOME/zsh/plugins
+ZSH_PLUGINS=(
+    "zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+    "zsh-you-should-use/you-should-use.plugin.zsh"
+)
+for plug in $ZSH_PLUGINS; do
+    repo=$XDG_DATA_HOME/zsh/plugins/$(cut -d '/' -f1 <<< $plug)
+    if [[ -d $repo ]]; then
+        source $XDG_DATA_HOME/zsh/plugins/$plug;
+    else
+        echo 'I dont find the requested plugin, try pulling' $repo;
+    fi
+done
+unset plug repo
+
+
+# Spaceship, what to display
+SPACESHIP_PROMPT_ORDER=(
+    user        # Username section
+    dir         # Current directory section
+    host        # Hostname section
+    time        # Time stamps section
+    git         # Git section
+    exec_time   # Execution time
+    line_sep    # Line break
+    battery     # Battery level and status
+    jobs        # Background jobs indicator
+    char        # Prompt character
+)
+# Spaceship, prompt
+# SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+# Spaceship, char
+SPACESHIP_CHAR_SYMBOL=❯
+SPACESHIP_CHAR_SUFFIX=" "
+# Spaceship, time
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_FORMAT="%T"
+# Spaceship, jobs
+SPACESHIP_JOBS_SHOW=true # default, trying out
+# Load spaceship
+autoload -U promptinit; promptinit
+prompt spaceship
