@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/kajarfvidsson/.config/nvim/rc'
+let g:netrw_dirhist_4='/home/kajarfvidsson'
 let g:netrw_dirhist_3='/mnt/c/kaarmu/repos/config_manager/xdg_config/bash'
 let g:netrw_dirhist_2='/mnt/c/kaarmu/repos/config_manager/xdg_config'
 let g:netrw_dirhist_1='/mnt/c/kaarmu/repos/config_manager'
