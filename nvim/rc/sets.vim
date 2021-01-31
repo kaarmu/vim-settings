@@ -17,6 +17,7 @@ set nobackup        " Don't need backup either
 set undofile        " Default location is XDG_DATA_HOME/nvim/undo
 set termguicolors   " Enable 24-bit RGB color in terminal
 set signcolumn=yes  " Always show the sign column
+highlight SignColumn guibg=None
 set updatetime=50   " To make vim snappier (?)
 set autoread        " Read automatically from outside changes
 set enc=utf-8       " vim display encoding
@@ -43,6 +44,11 @@ set backspace=indent,eol,start  " <BS> works on newlines as well
 
 set nohlsearch  " Start without search highlighting
 set incsearch   " Search while writing
+
+set completeopt=menuone,noinsert,noselect
+set pumheight=10
+
+set termguicolors
 
 " ==================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()
