@@ -4,11 +4,10 @@
 " ====
 "   - plugins
 "       - vimspector
-"   - move aroud stuff/organizing
-"       - keybindings
+"       - vim-bujo
 "
 " Installed Plugins                                                         {{{1
-call plug#begin($VIMPLUGGED)
+call plug#begin('~/.local/share/nvim/plugged')
 
 " *-- Appearance
 Plug 'morhetz/gruvbox'
@@ -18,6 +17,9 @@ Plug 'vim-airline/vim-airline'
 Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
+
+" *-- Git
+Plug 'tpope/vim-fugitive'
 
 " *-- Better folding
 Plug 'tmhedberg/SimpylFold'
@@ -33,11 +35,6 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'tjdevries/nlua.nvim'
 
 call plug#end()
-
-" Appearance                                                                {{{1
-syntax on           " show syntax
-colorscheme gruvbox
-set background=dark
 
 " Auto groups                                                               {{{1
 
@@ -56,10 +53,6 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 
 " }}}1
-
-source $VIM/rc/sets.vim
-source $VIM/rc/keybinds.vim
-source $VIM/rc/lsp.vim
 
 " ==============================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()

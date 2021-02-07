@@ -38,6 +38,8 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
+inoremap <C-e> <C-o>el
+inoremap <C-b> <C-o>b
 
 " inoremap <C-H> <C-o>^
 " inoremap <C-J> <cmd>+15<CR>
@@ -66,7 +68,7 @@ vnoremap <A-,> <cmd>tabprevious<CR>
 
 
 " Edit                                                          {{{1
-imap <silent> <C-BS> <C-w>
+imap <silent> <C-BS> <C-o>h<C-o>vbd
 
 " Windows (splits)                                              {{{1
         " (create) window right/left/down/up
@@ -130,7 +132,7 @@ nnoremap <silent> <leader>cl :lua vim.lsp.diagnostic.loc_list()<CR>
 
 " Complete Menu                                                 {{{1
         " When press enter, select highlighted on complete menu
-" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " }}}
 " ==================================================================

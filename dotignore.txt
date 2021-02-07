@@ -1,0 +1,9 @@
+bash
+git
+gnupg
+go
+ipython
+jupyter
+matplotlib
+procps
+wslu

@@ -18,7 +18,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 # Warnings
-setopt autocd beep
+setopt autocd
+unsetopt beep
 
 # Set cursor to beam style
 echo -ne '\e[5 q'
@@ -78,6 +79,7 @@ unset plug repo
 SPACESHIP_PROMPT_ORDER=(
     user        # Username section
     dir         # Current directory section
+    venv        # python virtualenv
     host        # Hostname section
     time        # Time stamps section
     git         # Git section
@@ -99,6 +101,10 @@ SPACESHIP_TIME_FORMAT="%T"
 SPACESHIP_TIME_12HR=false
 # Spaceship, jobs
 SPACESHIP_JOBS_SHOW=true # default, trying out
+# Spaceship, virtualenv
+# SPACESHIP_VENV_SHOW=true
+SPACESHIP_VENV_GENERIC_NAMES=()
 # Load spaceship
 autoload -U promptinit; promptinit
 prompt spaceship
+
