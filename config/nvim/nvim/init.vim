@@ -1,25 +1,25 @@
-" FOR NEOVIM, kaarmu
+" VIMRC FOR NEOVIM, kaarmu
 " ==============================================================================
 " TODO                                                                      {{{1
 " ====
 "   - plugins
 "       - vimspector
-"   - move aroud stuff/organizing
-"       - keybindings
+"       - vim-bujo
 "
 " Installed Plugins                                                         {{{1
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " *-- Appearance
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
-Plug 'mhinz/vim-startify'
-Plug 'ryanoasis/vim-devicons'
 
 " *-- Nice to have
 Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
+
+" *-- Git
+Plug 'tpope/vim-fugitive'
 
 " *-- Better folding
 Plug 'tmhedberg/SimpylFold'
@@ -35,14 +35,6 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'tjdevries/nlua.nvim'
 
 call plug#end()
-
-let g:airline#extensions#tabline#enabled = 1
-
-
-" Appearance                                                                {{{1
-syntax on           " show syntax
-colorscheme gruvbox
-set background=dark
 
 " Auto groups                                                               {{{1
 
@@ -61,5 +53,6 @@ augroup END
 set completeopt=menuone,noinsert,noselect
 
 " }}}1
+
 " ==============================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()
