@@ -1,0 +1,1006 @@
+paru -Ss nerd-fonts
+paru -Ss nerd-fonts-com
+paru -Q nerd-fon
+paru -Q nerd-fonts
+paru -R ttf-nerd-fonts-symbols-mono
+paru -S nerd-fonts-complete
+paru -S nerd-fonts-complete
+paru
+paru -h
+ls .cache/
+ls ~/.cache
+cd ~
+rm -r ~/.cache/paru
+rm -fr ~/.cache/paru
+paru -S nerd-fonts-complete
+fc-list : family
+nvim 
+killall xmobar
+fc-list : family
+sort -h
+fc-list : family | sort
+nvim 
+nvim 
+nvim 
+paru -R nerd-fonts-complete
+pacman -S fontawesome
+pacman -Ss fontawesome
+pacman -Ss fontawe
+pacman -Ss font-awe
+fc-list : family | sort
+pacman -Ss font-awe
+pacman -S ttf-font-awesome
+paru -S ttf-font-awesome
+fc-list : family | sort
+alsamixer
+fc-match "Font Awesome\
+"
+fc-match "Font Awesome"
+fc-match "FontAwesome"
+fc-match "Fon"
+alsamixer
+fc-list --help
+fc-list
+fc-list
+fc-list --help
+fc-list -v :family
+nvim
+nvim
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+nvim
+pacman -Ss FontAwesome
+paru -Ss FontAwesome
+alsamixer
+nvim
+nvim
+fc-list : family | sort
+nvim
+alsamixer
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+killall xmobar
+nvim
+fc-list : family | sort
+startx
+xmonad --recompile
+startx
+less /var/log/Xorg.0.log
+journalctl -b | grep "EE"
+journalctl -b-1
+xinit
+startx
+startx xmonad
+xinit xmonad
+ls /etc/X11
+less /etc/X11/nvidia-xorg.conf
+ls /etc/X11/xorg.conf.backup
+less /etc/X11/xorg.conf.backup
+less /etc/X11/xinit
+less /etc/X11/xinit/xinitrc
+nvim /etc/X11/xinit/xinitrc
+sudo nvim /etc/X11/xinit/xinitrc
+ls
+ls /etc/X11/xinit
+nvim /etc/X11/xinit/xinitrc
+nvim /etc/X11/xinit/nvidia-xinitrc
+mv /etc/X11/xinit/nvidia-xinitrc ~/nvidia-xinitrc.tmp
+sudo mv /etc/X11/xinit/nvidia-xinitrc ~/nvidia-xinitrc.tmp
+ls /etc/X11/xinit
+ls /etc/X11/xinit/xinitrc.d
+startx
+xinit xmonad
+cd /etc/X11
+ls
+cat xorg.conf.nvidia-xconfig-original
+sudo rm xorg.conf.nvidia-xconfig-original
+cat xorg.conf.backup
+ls
+ls nvidia-xorg.conf
+ls nvidia-xorg.conf.d
+rmdir nvidia-xorg.conf.d
+sudo rmdir nvidia-xorg.conf.d
+ls
+ls xorg.conf.d
+ls xorg.conf.d/30-nvidia.conf
+nvim xorg.conf.d/30-nvidia.conf
+ls
+rm xorg.conf.d/30-nvidia.conf
+sudo rm xorg.conf.d/30-nvidia.conf
+ls
+startx
+cd
+startx
+startx
+xkill
+alsamixer
+paru -Q font
+paru -Q
+paru -Q | grep f*
+paru -Q | grep f
+paru -Q | grep font
+pacman -Q | grep font
+paru -R ttf-font-awesome
+paru -Ss font-nerd
+paru -Ss nerd-font
+paru -Ss nerd-fonts
+paru -Ss nerd-fonts-s
+paru -Ss ttf-nerd-fonts
+paru -S ttf-nerd-fonts-symbols
+paru -S ttf-nerd-fonts-symbols-mono
+fc-list : family | sort
+nvim
+cd .config/xmobar/scripts
+nvim updates.sh
+amixer get Master
+amixer get Master | tail -n1
+xbacklight
+xbacklight -h
+xbacklight -set 100
+xbacklight -set 10
+xclock
+nvim
+cd .config/xmobar
+ls
+mkdir scripts
+cd scripts
+nvim volume
+nvim volume.sh
+mv volume volume.sh
+ls
+nvim volume.sh
+nvim volume.sh
+nvim updates.sh
+echo \xf8d3
+echo \xf8d3 >> updates.sh
+nvim updates.sh
+nvim volume.sh
+nvim memory.sh
+nvim network.sh
+nvim cpu.sh
+nvim backlight.sh
+nvim backlight.sh
+nvim notes.md
+ls
+ls
+nvim notes.md
+cd ..
+nvim xmobarrc
+nvim scripts/clock.sh
+nvim xmobarrc
+killall xmobar
+nvim xmobarrc
+killall xmobar
+nvim xmobarrc
+nvim xmobarrc
+killall xmobar
+nvim xmobarrc
+ls
+cd scripts
+ls
+nvim xmobarrc
+nvim ../xmobarrc
+killall xmobar
+nvim ../xmobarrc
+nvim ../xmobarrc
+nvim ../xmobarrc
+killall xmobar
+nvim ../xmobarrc
+killall xmobar
+nvim ../xmobarrc
+killall xmobar
+alsamixer
+alsamixer
+killall xmobar
+killall xmobar
+nvim ../xmobarrc
+nvim ../xmobarrc
+less ~/.xsession-erros
+less ~/.xsession-errors
+less ~/.xsession-errorrs
+less ~/.xsession-errors
+xmobar &
+killall xmobar
+jobs
+kill %1
+nvim ../xmobarrc
+ls
+./backlight.sh
+sudo ./backlight.sh
+mv ./backlight.sh ./backlight
+./backlight
+sudo ./backlight
+startx
+ /home/kaarmu/.xmonad/build
+mkdir /home/kaarmu/.xmonad/build
+xmonad --recompile
+/home/kaarmu/.xmonad
+s
+ls
+cd build
+ls
+xmonad --help
+xmonad --recompile
+sudo startx
+.config/xmobar
+nvim scripts/cpu.sh
+killall xmobar
+cd 
+nvim .xmonad/xmonad.hs
+nvim .xmonad/xmonad.hs
+killall xmobar
+nvim .xmonad/xmonad.hs
+nvim .config/xmobar/xmobarrc
+cd .config/xmobar
+ls
+./scripts
+ls
+chmod -x *.sh
+memusage
+./memory.sh
+chmod +x *.sh
+./memory.sh
+nvim ./memory.sh
+./memory.sh
+nvim ./memory.sh
+nvim ./memory.sh
+xmobar &
+./cpu
+./cpu.sh
+nvim ./cpu.sh
+exit
+jobs
+killall 
+killall jobs
+xkill
+jobs
+jobs -h
+jobs --help
+nvim ~/.xmonad/xmonad.hs
+kill %1
+nvim ~/.xmonad/xmonad.hs
+xmobar &
+kill %1
+nvim .
+nvim .
+exit
+startx
+nvim .xmonad/xmonad.hs
+reboot
+pacman -Qu
+pacman -Q
+pacman -Qh
+pacman -Qu | grep -Fcv '[ignored]'
+cd .config/xmobar
+./scripts
+ls
+nvim clock.sh
+date
+date | sed -r \1
+date | sed -r *\s
+date | sed -r '[*\s]'
+date | sed -r '*\s'
+sed -h
+nvim clock.sh
+date | sed '*\s'
+date | sed 's\'
+date | sed 's\ \'
+date | sed 's\ s\'
+nvim clock.sh
+date | sed 's/ /g'
+date | sed 's/ /'
+grep -h
+grep --help
+date | sed '*\s'
+date | sed -E '*\s'
+date | sed '.*\s'
+date | grep '.*\s'
+date | grep '.*\s\1'
+date | grep '[.*\s]\1'
+date | grep '(.*\s)\1'
+date | grep '.*\s'
+date | grep '.+\s'
+date | grep '.?\s'
+date | grep '.*\s'
+date | grep '.\+\s'
+date | grep '.\+\s\{1}'
+date | grep '.\+\s\{1\}'
+date | grep '.\+\s\1'
+date | grep '.\+\s\}1'
+date | grep '\{.\+\s\}\1'
+date | grep '.\+\s\1'
+date | grep '.\+\s'
+date | grep '[.+\s]'
+date | grep '[.\+\s]'
+date | grep '\[.\+\s\]'
+date | grep '(.\+\s)'
+date | grep '(.\+\s)\1'
+nvim clock.sh
+nvim ../xmobarrc
+xmonad --help
+xmonad --restart
+killall xmobar
+xmonad --restart
+nvim ../xmobarrc
+killall xmobar
+xmonad --restart
+nvim ../xmobarrc
+./battery
+./battery.sh
+ls
+nvim ../xmobarrc
+xmobar
+xmobar
+nvim ../xmobarrc
+rm clock.sh
+./volume.sh
+nvim ../xmobarrc
+./backlight.sh
+chmod +x backlight.sh
+./backlight.sh
+./memory.sh
+nvim ./memory.sh
+nvim ./backlight.sh
+nvim ./backlight.sh
+killall xmobar
+xmonad --restart
+./updates.sh
+nvim updates.sh
+killall xmobar; xmonad --restart
+./updates.sh
+nvim updates.sh
+nvim ../xmobarrc
+nvim ../xmobarrc
+killall xmobar; xmonad --restart
+nvim network.sh
+./network.sh
+nvim network.sh
+ls /sys/net/
+ls /sys/
+xkill
+.config/xmobar
+ls
+nvim ./xmobarrc
+nvim scripts/updates.sh
+nvim ./xmobarrc
+startx
+xkill
+nvim 
+killall xmobar; xmonad --restart
+xmobar
+nvim 
+xmonad --restart
+nvim 
+notify-send -u critical "lmao"
+nvim
+xbacklight -set 10
+xbacklight -set 5
+nvim
+.config/xmobar/scripts/network.sh
+xbacklight -set 5
+killall xmobar; xmonad --restart
+x,
+xmobar
+nvim
+xkill
+nvi
+nvim
+exit
+startx
+nvim .zprofile
+shutdown now
+xbacklight -set 30
+.config/xmobar/xmobarrc
+nvim .config/xmobar/xmobarrc
+xkill xmobar; xmonad --restart
+nvim .config/xmobar/xmobarrc
+killall xmobar; xmonad --restart
+killall xmobar
+xmonad --restart
+pacman -Qu
+pacman -Syu
+sudo pacman -Syu
+sudo pacman -Qu
+sudo pacman -Syu
+paru -Qu
+paru -Q
+paru -Qh
+paru -Qu
+nvim .config/xmobar/scripts/updates.sh
+killall xmobar; xmonad --restart
+nvim .config/xmobar/xmobarrc
+killall xmobar; xmonad --restart
+paru -Qu
+\:q
+exit
+alsamixer
+xbacklight -set 20
+cd /
+df -h
+ls /tmp
+sudo rm -rf /tmp/*
+ls /tmp
+df -h
+cd 
+paru -S insync
+echo insync >> ~/.local/installed-pkgs
+insync
+insync show
+insync start
+alsamixer
+nvim .config/xmobar/xmobarrc
+systemctl enable insync@kaarmu.service
+alsamixer
+\:q
+exit
+alsamixer
+exit
+alsamixer
+exit
+paru -Syu
+paru -h
+paru -Rh
+paru -Ru
+paru -sh
+paru -Sh
+paru -Sc
+df -h
+insync show
+cd One
+cd OneDrive/
+ls
+cd Desktop
+ls
+cd ../Documents
+ls
+insync show
+insync show
+insync show
+surface performance get
+surface performance
+surface performance set 3
+sudo surface performance set 3
+insync quit
+insync show
+insync start
+insync show
+insync show
+insync show
+reboot
+xdotool -h
+alsamixer
+surface performance set 1
+sudo surface performance set 1
+nvim .config/xmobar/xmobarrc
+killall xmobar; xmonad --restart
+nvim .config/xmobar/xmobarrc
+killall xmobar; xmonad --restart
+exit
+nvim
+exit
+startx
+nvim .xmonad/xmonad.hs
+startx
+sta
+startx
+shutdown now
+exit
+startx
+systemctl help
+systemctl --help
+systemctl suspend
+python
+python
+nvim .config/xmobar/xmobarrc
+xmonad --restart
+xmobar
+nvim .config/xmobar/xmobarrc
+xmonad --restart
+xmobar
+xmonad --restart
+nvim .config/xmobar/xmobarrc
+xkill
+python
+xkill
+nvim
+systemctl suspend
+nvim 
+nvim
+nvim
+ls
+nvim .xmonad/xmonad.hs
+nvim .config/xmobar/xmobarrc
+startx
+startx
+clear
+startx
+journalctl -b-1
+pacman -Qu
+paru -Qu
+paru -Q | grep xf86
+paru -R xf86-video-intel
+pacman -Q | grep nvidia
+xmobar
+nvim 
+uname -s -r
+uname -s
+cat /usr/include/X11/keysymdef.h
+nvim /usr/include/X11/keysymdef.h
+firef
+nvim
+nvim
+nvim
+nvim
+nvim
+xmobar
+xmobar
+xmobar
+xmobar
+xmobar
+alsa
+alsamixer
+nvmi
+nvim
+nvim
+nvi
+nvim
+xmobar
+nvim
+nvim
+nvim .config/xmobar/xmobarrc
+\:q
+nvim
+xclock
+alsamixer -h
+alsactl -h
+alsabat -h
+alsa_in -h
+alsa_out -h
+alsaloop
+paru -S ttf-ipafont
+paru -S otf-ipafont
+alsamixer
+nvim
+nvim
+nvim
+ls
+cat q
+cat ./q
+rm ./q
+ls
+ls -a
+cat ./.lesshst
+ls .cache/
+ls .xmonad
+ls .xmonad/build
+rmdir .xmonad/build
+ls
+nvim .config/xmobar/xmobarrc
+nvim
+nvim .xmonad/xmonad.hs
+nvim .xmonad/xmonad.hs
+nvim .xmonad/xmonad.hs
+xmonada --recompile
+xmonad --recompile
+nvim
+xmonad --recompile
+xmobar
+nvim
+xmonad --recompile
+nvim
+xmonad --recompile
+killall xmobar; xmonad --restart
+nvim 
+xmonad --recompile
+nvim
+xmonad --recompile
+killall xmobar; xmonad --restart
+python
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+startx
+start
+startx
+startx
+startx
+shutdown now
+nvim 
+killall xmobar; xmonad --restart
+paru -Q
+paru -Qu
+cd repos
+ls
+paru -S openssh
+paru -Syu
+exit
+repos ~/repos/pyuss
+ls
+repos/pyuss
+ls
+xdg_open ./uss_24178253_spec_76.pdf	
+xdg-open ./uss_24178253_spec_76.pdf
+xdg-open ./bu0050_gb_3111.pdf
+exit
+python
+python
+python
+ssh-keygen -t ed25519 -C "kajarfvidsson@gmail.com"
+chpasswd -h
+passwd kaarmu
+passwd kaarmu
+passwd root
+sudo passwd root
+1998Elektroteknik?
+ls .ssh
+cat .ssh/id_ed25519.pub
+paru -S xclip
+xclip .ssh/id_ed25519.pub
+xclip -s
+xclip -h
+xclip -h
+xclip -i .ssh/id_ed25519.pub
+clear
+cd repos
+ls
+git clone git@github.com:kaarmu/pyuss
+ls
+cd pyuss
+ls
+nvim slave.py
+git status
+git add .
+ls
+gc -m "more on slave"
+git commit -m "more on slave"
+gP
+gP
+ls
+gs
+git add .
+gc "more  on slave"
+git config --global user.email kajarfvidsson@gmail.com
+git config --global user.name kaarmu
+gc "more  on slave"
+gP
+startx
+startx
+startx
+reboot
+alsa
+alsamixer
+exit
+pacman -Qu
+paru -Qu
+pacman -Syu
+sudo pacman -Syu
+paru -Syu
+startx
+paru -Syu
+ls /boot
+startx
+l
+ls
+la
+ls /usr/lib/
+ls /usr/lib/libz*
+readlink /usr/lib/libz.so
+fdisk -l
+sudo fdisk -l
+lsblk
+startx
+xmonad --recompile
+startx
+touch /etc/pacman.d/hooks/xmonad.hook
+sudo touch /etc/pacman.d/hooks/xmonad.hook
+nvim /etc/pacman.d/hooks/xmonad.hook
+sudo nvim /etc/pacman.d/hooks/xmonad.hook
+python
+python -m pip list | grep serial
+python -m pip3 list | grep serial
+python -m venv
+paru -Ss python-pip
+pacman -Ss python-pip
+pacman -Ss pip
+pacman -Ss python-pip
+pacman -S python-pip
+sudo pacman -S python-pip
+pip
+ls /usr/bin/py* 
+pip
+pip install pipenv
+cd
+ls
+rm ':term sudo tee'
+ls
+la
+ls .cargo
+ls .pki
+source ~/.zshrc
+echo $XDG_CONFIG_HOME
+echo $PATH
+pip install pipenv
+pipenv -h
+pipenv shell
+alsamixer
+ls
+pipenv shell
+ . /home/kaarmu/.local/share/virtualenvs/pyuss-neQdnjed/bin/activate
+pipenv install numpy
+pipenv install pyserial
+python
+paru -S nautilus
+sudo pacman -R nautilus
+sudo pacman -Syu
+pacman -h
+pacman -Rh
+pacman -Ru
+sudo pacman -Ru
+paru -Sh
+exit
+nvim
+vifm
+thunar
+cd repos
+ls
+cd pyuss
+xdg-open ./bu0050_gb_3111.pdf
+nvim
+nvim
+nvim
+killall xmobar; xmonad --restart
+nvim /etc/pacman.d/hooks/xmonad.hook
+cd pyuss
+cd repos/pyuss
+ls
+gp
+git config --global config pull.rebase false
+git config --global pull.rebase falsed
+nvim slave.py
+pipenv shell
+ . /home/kaarmu/.local/share/virtualenvs/pyuss-neQdnjed/bin/activate
+python
+python main.py
+A
+python main.py
+python main.py
+k
+k
+python main.py
+python main.py
+python main.py
+py
+ . /home/kaarmu/.local/share/virtualenvs/pyltl-VX--yQ7X/bin/activate
+python
+nvim main.py
+npm -h
+paru -Ss pyright
+paru -S pyright
+paru -S pyright
+nvim main.py
+exit
+ls
+cd Documents
+mkdir pyltl
+cd pyltl
+pipenv
+pipenv shell
+exit
+systemctl suspend
+paru -S xorg-xinput xf86-input-libinput
+cat ~/.local/installed-pkgs
+echo "xorg-xinput xf86-input-libinput" >> .local/installed-pkgs
+paru -Q
+cat ~/.local/installed-pkgs
+echo "xclip surface-control" >> .local/installed-pkgs
+paru -Q
+xorg-xinput
+xinput
+xinput -h
+ls .local/share/xorg/Xorg.0.log
+grep -e "driver 'libinput'" .local/share/xorg/Xorg.0.log
+less .local/share/xorg/Xorg.0.log
+nvim /etc/X11/xorg.conf.d/70-synaptics.conf
+sudo nvim /etc/X11/xorg.conf.d/70-synaptics.conf
+exit
+ . /home/kaarmu/.local/share/virtualenvs/pyuss-neQdnjed/bin/activate
+python
+python
+exit
+pipenv shell
+exit
+repos/pyuss
+ls
+nvim slave.py
+exit
+cd repos/pyuss
+ls
+less uss_24178253_spec_76.pdf
+pdftotext uss_24178253_spec_76.pdf
+ls
+less uss_24178253_spec_76.
+less uss_24178253_spec_76.txt 
+rm uss_24178253_spec_76.txt
+ga .
+gc "minor bugs"
+gP
+exit
+systemctl suspend
+alsamixer
+exit
+nvim
+xmonad --recompile; xmonad --restart
+xmonad --recompile; xmonad --restart
+nvim
+nvim
+xmonad --recompile; xmonad --restart
+paru -Ss pacman
+paru -Ss pacmanfm
+paru -Ss pcmanfm
+paru -S pcmanfm
+paru -R thunar
+du -sh /var/cache/pacman/pkg
+paru -h
+pacman -Sh
+paru -Su
+paru -Sc
+nvim .local/installed-pkgs
+pacman -Qh
+paru -Qt
+paru -Qtd
+rust
+paru -Rh
+paru -Rns $(paru -Qtdq)
+du /
+df
+df -h
+df --help
+df -du --help
+dfdu --help
+du --help
+du -s /
+du -d=1 .config
+du --help -d=1 .config
+du -h -d 1 .config
+du -h -d 1 /
+sudo du -h -d 1 /
+sudo du -h -d 1 ~
+sudo du -h -d 1 ~/OneDrive
+sudo du -h -d 1 ~/OneDrive/Documents
+insync show
+insync quit
+sudo du -h -d 1 ~/OneDrive/Documents/Adobe
+sudo du -h -d 1 ~/OneDrive/Documents/Adobe/temp
+sudo du -h -d 1 ~/OneDrive/Documents/Adobe/temp/Photos
+rm -r ~/OneDrive/Documents/Adobe/temp
+ls
+du -h -d 1 /
+sudo du -h -d 1 /
+sudo du -h -d 1 ~
+sudo du -h -d 1 /usr
+sudo du -h -d 1 /usr/bin
+sudo du -h -d 1 /usr/
+sudo du -h -d 1 /usr/li
+sudo du -h -d 1 /usr/lib
+du -h
+du --help
+sort -h
+sudo du -h -d 1 /usr/lib
+sudo du -h -d 1 /usr/lib | sort
+sort --help
+sudo du -h -d 1 /usr/lib | sort
+sudo du -h -d 1 ~
+ls .cache
+sudo du -h -d 1 ~/.cache
+rm -r .cache/*
+sudo rm -r .cache/*
+ls
+sudo du -h -d 1 ~/.cache
+sudo du -h -d 1 ~/
+sudo du -h -d 1 ~/OneDrive
+sudo du -h -d 1 ~/OneDrive/Documents
+sudo du -h -d 1 ~/OneDrive/School
+sudo du -h -d 1 ~/OneDrive
+sudo du -h -d 1 /
+cat ~/.local/installed-pkgs
+echo python-pip >> .local/installed-pkgs
+echo python-pipenv >> .local/installed-pkgs
+vifm
+paru -R vifm
+exit
+startx
+pipenv shell
+systemctl suspend
+ . /home/kaarmu/.local/share/virtualenvs/pyltl-MpkSeGdj/bin/activate
+python
+ls
+cp -r Documents/pyltl OneDrive/Desktop
+ls OneDrive/Desktop
+rm Documents/pyltl -r
+insync show
+insync start
+insync show
+insync
+insync start
+insync show
+systemctl suspend
+insync show
+cd repos/pyuss
+cd ..
+cd OneDrive/Desktop
+cd ~/OneDrive/Desktop
+ls
+cd pyltl
+nvim main.py
+nvim /etc/X11/xorg.conf.d/70-synaptics.conf
+sudo nvim /etc/X11/xorg.conf.d/70-synaptics.conf
+exit
+libinput
+libinput measure
+libinput measure --help
+libinput measure input
+paru -Q libinput
+alacritty -h
+alacritty -e "echo wooow"
+alacritty -e "~/.local"
+alacritty -e "cd ~/.config"
+exit
+nvim
+python
+nvim
+exit
+pipenv
+pipenv shell
+ . /home/kaarmu/.local/share/virtualenvs/pyltl-MpkSeGdj/bin/activate
+python
+nvim
+ls
+insync start
+insync show
+ls
+cd repos
+ls
+git clone git@github.com:kaarmu/pylyl
+git clone git@github.com:kaarmu/pyltl
+cp ~/OneDrive/Desktop/pyltl/* .
+ls
+mv main.py pyltl
+mv Pipfile pyltl
+ls
+cd pylt
+cd pylt
+cd pyltl
+ls
+ga .
+gc "Working LTL with core formulas and mini-language with parser."
+gP
+cd~
+cd
+s
+ls
+exit
+startx
+startx
+paru -Syu
+paru -Syu
+paru -Syu
