@@ -5,7 +5,7 @@ TAB := $(NULL)    $(NULL)
 config_home := ~/.config
 local_home := ~/.local/share
 
-includes := $(addsuffix /,$(shell cat dotinclude))
+includes := $(addsuffix /,$(shell cat $(shell pwd)/include))
 configs := $(addsuffix /,$(shell ls $(config_home)))
 locals := $(addsuffix /,$(shell ls $(local_home)))
 i_configs := $(addsuffix /,$(shell ls $(shell pwd)/config))
@@ -27,14 +27,14 @@ load-locals:
 	$(foreach app,$(ok_locals),\
 		$(info $(TWO) $(local_home)/$(app) -> $(shell pwd)/local/$(app)))
 	$(foreach app,$(ok_locals),\
-		$(shell cp -r $(local_home)/$(app) $(shell pwd)/local/))
+		$(shell sudo cp -r $(local_home)/$(app) $(shell pwd)/local/))
 
 load-configs:
 	$(info I will load following configs into repo:)
 	$(foreach app,$(ok_configs),\
 		$(info $(TWO) $(config_home)/$(app) -> $(shell pwd)/config/$(app)))
 	$(foreach app,$(ok_configs),\
-		$(shell cp -r $(config_home)/$(app) $(shell pwd)/config/))
+		$(shell sudo cp -r $(config_home)/$(app) $(shell pwd)/config/))
 
 install:
 	$(info I will do the following installations:)

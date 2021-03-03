@@ -335,3 +335,107 @@ nvim makefile
 make main
 nvim makefile
 exit
+python
+nvim lab3.py
+cd onedrive/School/KTH/Year\ 4/DD2421\ -\ Machine\ Learning/3.\ Moment
+ls
+cd lab3
+cd *3
+ls
+nvim *3.py
+pips
+make load-repo
+make load-repos
+cat make
+cd ~/repos/dotfiles
+ls
+make load-repo
+cp -r ~/.config/nvim /home/kaarmu/repos/dotfiles/config/nvim
+cp -r ~/.config/nvim /home/kaarmu/repos/dotfiles/config/
+ls
+cd config
+pwd
+rm config local
+ls
+rm locals
+mkdir config local
+ls
+make load-repo
+nv
+nvim ~/.config/zsh/aliases
+;src
+ls
+nvim ~/.config/nvim/init.vim
+nv makefile
+make load-repo
+nv makefile
+make load-configs
+\:wq
+nv makefile
+make load-repo
+nv makefile
+cd ~/.config/nvim
+lw
+ls
+cd pluging
+cd plugin
+ls
+cd ~/.local/share
+cd nvim
+ls
+plugged
+ls
+ cd ~/repos/dotfile
+ cd ~/repos/dotfiles
+ls
+local
+ls
+cd local
+local
+ls
+cd nvim
+ls
+cd ../
+ls
+cd ../
+rm -r local/*
+rm -rf local/*
+ls
+ls local
+make load-repo
+cd local
+ls
+cd nvim
+ls
+cd plugged
+ls
+cd ../
+cd ../..
+rm -rf local/*
+nv makefile
+rm -rf config/*
+rm -rf local/*
+make load-repo
+nv makefile
+make load-repo
+nv makefile
+rm -rf {config,local}/*
+rm -rf {config,local}/*
+rm -rf {config,local}/*
+make load-repo
+make load-repo
+sudo make load-repo
+ls config
+ls config/nvim
+ls config/nvim/autoload
+ls local/nvim
+ls
+nv makefile
+gs
+ga .
+gc "Made the makefile sooo much better."
+git config --global user.email "kajarfvidsson@gmail.com"
+git config --global user.name "Kaj Munhoz Arfvidsson"
+gc "Made the makefile sooo much better."
+gP
+exit
