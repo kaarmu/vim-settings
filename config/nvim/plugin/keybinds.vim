@@ -38,7 +38,7 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
-inoremap <C-e> <C-o>el
+inoremap <C-e> <C-o>e<C-o>l
 inoremap <C-b> <C-o>b
 
 " inoremap <C-H> <C-o>^
@@ -68,7 +68,6 @@ vnoremap <A-,> <cmd>tabprevious<CR>
 
 
 " Edit                                                          {{{1
-imap <silent> <C-BS> <C-o>h<C-o>vbd
 
 " Windows (splits)                                              {{{1
         " (create) window right/left/down/up
@@ -84,7 +83,6 @@ nnoremap <leader>wq <cmd>confirm q<CR>
 nnoremap <silent> <leader>t. <cmd>.tabnew<CR>
 nnoremap <silent> <leader>t, <cmd>-tabnew<CR>
         " tab help/window/terminal/quit
-nnoremap <silent> <leader>th <cmd>tab help<Space>
 nnoremap <silent> <leader>tw <cmd>tab split<CR>
 nnoremap <silent> <leader>tt <cmd>tab terminal<CR>
 nnoremap <leader>tq <cmd>confirm tabclose<CR>
@@ -131,9 +129,11 @@ nnoremap <silent> <leader>cs :lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 nnoremap <silent> <leader>cl :lua vim.lsp.diagnostic.loc_list()<CR>
 
 " Complete Menu                                                 {{{1
-        " When press enter, select highlighted on complete menu
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <CR> pumvisible() ? (complete_info().selected == -1 ? '<C-y><CR>' : '<C-y>') : '<CR>'
 
-" }}}
+
 " ==================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()

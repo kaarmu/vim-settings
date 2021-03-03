@@ -3,7 +3,7 @@
 
 # nvim  - normal neovim
 # nv    - the installed neovim nightly
-alias nv="~/.local/bin/nvim"
+alias nv="nvim"
 alias py="python3"
 alias python="python3"
 
@@ -34,6 +34,8 @@ alias la='ls -A'
 alias mkvenv='virtualenv'
 alias venv='source .venv/bin/activate'
 alias devenv='deactivate'
+alias pips='pipenv shell'
+alias pipi='pipenv install'
 
 # git -------------------------------------------------------------------------
 

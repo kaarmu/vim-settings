@@ -48,7 +48,7 @@ set incsearch   " Search while writing
 set completeopt=menuone,noinsert,noselect
 set pumheight=10
 
-set termguicolors
+set exrc
+set secure
 
-" ==================================================================
 " vim: foldmethod=marker foldlevel=0 foldtext=FoldText_vim()

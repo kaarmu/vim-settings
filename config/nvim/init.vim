@@ -11,10 +11,16 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " *-- Appearance
 Plug 'morhetz/gruvbox'
+Plug 'lifepillar/vim-gruvbox8'
+Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
+
 Plug 'vim-airline/vim-airline'
+Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 
 " *-- Nice to have
-Plug '9mm/vim-closer'
+" Plug '9mm/vim-closer'
 Plug 'tpope/vim-commentary'
 Plug 'mhinz/vim-signify'
 

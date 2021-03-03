@@ -5,7 +5,7 @@
 # === ... ===
 
 # Load profile
-source $HOME/.profile
+source $HOME/.config/user-dirs.dirs
 
 # === Raw zsh stuff ===
 

@@ -1,52 +1,49 @@
 
-cfg_home = $(XDG_CONFIG_HOME)
-lcl_home = $(XDG_DATA_HOME)
+NULL :=
+TWO := $(NULL)  $(NULL)
+TAB := $(NULL)    $(NULL)
+config_home := ~/.config
+local_home := ~/.local/share
 
-ignores := $(shell cat dotignore.txt)
-ignores := $(addsuffix /,${ignores})
-cfg_ign := $(addprefix ${cfg_home}/,${ignores})
-lcl_ign := $(addprefix ${lcl_home}/,${ignores})
+includes := $(addsuffix /,$(shell cat dotinclude))
+configs := $(addsuffix /,$(shell ls $(config_home)))
+locals := $(addsuffix /,$(shell ls $(local_home)))
+i_configs := $(addsuffix /,$(shell ls $(shell pwd)/config))
+i_locals := $(addsuffix /,$(shell ls $(shell pwd)/local))
 
-configs := $(shell ls -d ${cfg_home}/*/)
-configs := $(filter-out ${cfg_ign},${configs})
-
-locals := $(shell ls -d ${lcl_home}/*/)
-locals := $(filter-out ${lcl_ign},${locals})
-
-repo_configs := $(shell ls -d $(shell pwd)/config/*/)
+ok_configs := $(filter $(configs),$(includes))
+ok_locals := $(filter $(locals),$(includes))
 
 list:
-	$(info ignores...)
-	$(foreach ign,${ignores},$(info ${ign}))
-	$(info configs...)
-	$(foreach app,${configs},$(info ./config/$(app:${cfg_home}/%=%)))
-	$(info locals...)
-	$(foreach app,${locals},$(info ./local/$(app:${lcl_home}/%=%)))
+	$(info Found these matching configs:)
+	$(info $(ok_configs))
+	$(info Found these matching locals:)
+	$(info $(ok_locals))
 
 load-repo: load-configs load-locals
 
 load-locals:
-	$(info I will ignore...)
-	$(foreach ign,${lcl_ign},$(info ${ign}))
-	$(info and then load repo with...)
-	$(foreach app,${locals},$(info ./local/$(app:${lcl_home}/%=%)))
-	$(foreach app,${locals}, \
-		$(shell cp -r ${app} $(shell pwd)/local/$(app:${lcl_home}/%=%)))
+	$(info I will load following locals into repo:)
+	$(foreach app,$(ok_locals),\
+		$(info $(TWO) $(local_home)/$(app) -> $(shell pwd)/local/$(app)))
+	$(foreach app,$(ok_locals),\
+		$(shell cp -r $(local_home)/$(app) $(shell pwd)/local/))
 
 load-configs:
-	$(info I will ignore...)
-	$(foreach ign,${cfg_ign},$(info ${ign}))
-	$(info and then load repo with...)
-	$(foreach app,${configs},$(info ./config/$(app:${cfg_home}/%=%)))
-	$(foreach app,${configs}, \
-		$(shell cp -r ${app} $(shell pwd)/config/$(app:${cfg_home}/%=%)))
+	$(info I will load following configs into repo:)
+	$(foreach app,$(ok_configs),\
+		$(info $(TWO) $(config_home)/$(app) -> $(shell pwd)/config/$(app)))
+	$(foreach app,$(ok_configs),\
+		$(shell cp -r $(config_home)/$(app) $(shell pwd)/config/))
 
 install:
-	$(info I will install...)
-	$(foreach repoapp,${repo_configs},$(info ./$(repoapp:$(shell pwd)/%=%)))
-	$(foreach repoapp,${repo_configs}, \
-		$(shell cp -r ${repoapp} \
-			$(repoapp:$(shell pwd)/config/%=~/.config/%) \
-		) \
-	)
+	$(info I will do the following installations:)
+	$(foreach app,$(i_configs),\
+		$(info $(TWO) $(shell pwd)/config/$(app) -> $(config_home)/$(app)))
+	$(foreach app,$(i_locals),\
+		$(info $(TWO) $(shell pwd)/local/$(app) -> $(local_home)/$(app)))
+	$(foreach app,$(i_configs),\
+		$(shell cp -r $(shell pwd)/config/$(app) $(config_home)/))
+	$(foreach app,$(i_locals),\
+		$(shell cp -r $(shell pwd)/local/$(app) $(local_home)/))
 
