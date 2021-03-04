@@ -16,6 +16,7 @@ nnoremap <silent> <leader>sc :source $MYVIMRC<CR>
 nnoremap <silent> <leader>Tn :set rnu!<CR>:set nu!<CR>
 nnoremap <silent> <leader>Tc :set colorcolumn!<CR>
 nnoremap <silent> <leader>Tw :set wrap!<CR>
+nnoremap <silent> <leader>Tl :set cursorline!<CR>
 
         " search abort
 nnoremap <silent> <leader>sa :nohlsearch<CR>
@@ -46,18 +47,18 @@ inoremap <C-b> <C-o>b
 " inoremap <C-K> <cmd>-15<CR>
 " inoremap <C-L> <C-o>$
 
-inoremap <A-h> <cmd>wincmd h<CR>
-inoremap <A-j> <cmd>wincmd j<CR>
-inoremap <A-k> <cmd>wincmd k<CR>
-inoremap <A-l> <cmd>wincmd l<CR>
-inoremap <A-.> <cmd>tabnext<CR>
-inoremap <A-,> <cmd>tabprevious<CR>
+inoremap <A-h> <Esc><cmd>wincmd h<CR>
+inoremap <A-j> <Esc><cmd>wincmd j<CR>
+inoremap <A-k> <Esc><cmd>wincmd k<CR>
+inoremap <A-l> <Esc><cmd>wincmd l<CR>
+inoremap <A-.> <Esc><cmd>tabnext<CR>
+inoremap <A-,> <Esc><cmd>tabprevious<CR>
 
 
 vnoremap H ^
 vnoremap J <cmd>+15<CR>
 vnoremap K <cmd>-15<CR>
-vnoremap L $
+vnoremap L $h
 
 vnoremap <A-h> <cmd>wincmd h<CR>
 vnoremap <A-j> <cmd>wincmd j<CR>
@@ -66,6 +67,16 @@ vnoremap <A-l> <cmd>wincmd l<CR>
 vnoremap <A-.> <cmd>tabnext<CR>
 vnoremap <A-,> <cmd>tabprevious<CR>
 
+onoremap H ^
+onoremap L $
+
+
+tnoremap <A-h> <C-\><C-n><cmd>wincmd h<CR>
+tnoremap <A-j> <C-\><C-n><cmd>wincmd j<CR>
+tnoremap <A-k> <C-\><C-n><cmd>wincmd k<CR>
+tnoremap <A-l> <C-\><C-n><cmd>wincmd l<CR>
+tnoremap <A-.> <C-\><C-n><cmd>tabnext<CR>
+tnoremap <A-,> <C-\><C-n><cmd>tabprevious<CR>
 
 " Edit                                                          {{{1
 
@@ -121,8 +132,12 @@ nnoremap <silent> <leader>cD :lua vim.lsp.buf.declaration()<CR>
 nnoremap <silent> <leader>cc :lua vim.lsp.buf.hover()<CR>
         " code references
 nnoremap <silent> <leader>cr :lua vim.lsp.buf.references()<CR>
+        " code (signature) help
+nnoremap <silent> <leader>ch :lua vim.lsp.buf.signature_help()<CR>
         " code Rename
 nnoremap <silent> <leader>cR :lua vim.lsp.buf.rename()<CR>
+        " code formatting
+nnoremap <silent> <leader>cf :lua vim.lsp.buf.formatting()<CR>
         " code show (diagnostics)
 nnoremap <silent> <leader>cs :lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
         " code list

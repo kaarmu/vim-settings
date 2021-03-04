@@ -439,3 +439,140 @@ git config --global user.name "Kaj Munhoz Arfvidsson"
 gc "Made the makefile sooo much better."
 gP
 exit
+paru -Syu zoom
+konsole .
+pacman -Syu
+sud opacman -Syu
+sudo pacman -Syu
+paru -Ss fira
+paru -Ss fira-code
+paru -Syu ttf-fira-code
+cd repos/dotfiles
+ls ~/.config
+ls ~/.config/okularrc
+cat ~/.config/okularrc
+echo python >> dotinclude
+ls
+rm dotignore.txt
+ls
+nv makefile
+nvim makefile
+mv dotinclude include
+ls
+ls
+cat include
+make load-repo
+nv makefile
+nvim makefile
+nvim makefile
+make load-repo
+ls
+ga .
+gc "some minor changes for comfortability and added everything I want from MANJARO."
+gP
+exit
+py lab3.py
+py *.py
+py *.py
+py *.py
+py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+run-help jjk
+run-help jjk
+run-help jjk
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+clear
+clear
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py~
+py *.py
+py *.py
+py *.py
+py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+py *.py\\
+
+python -c help(breakpoint)
+python -c "help(breakpoint)"
+py *.py\\
+
+py *.py\\
+
+py -m pdb lab3.py
+python lab3.py
+python lab3.py
+python lab3.py
+python lab3.py
+ . /home/kaarmu/.local/share/virtualenvs/lab03-VpPYegNp/bin/activate
+nvim lab3.py
+exit
